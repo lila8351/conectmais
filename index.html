@@ -14,10 +14,10 @@
 <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
   <h1 class="w3-xxxlarge w3-text-theme"></h1>
   <button class="w3-bar-item w3-button" onclick="w3_close()">Sair<i class="fa fa-remove"></i></button>
-  <a href="#" class="w3-bar-item w3-button">Proposta</a>
-  <a href="#" class="w3-bar-item w3-button">Valores</a>
-  <a href="#" class="w3-bar-item w3-button">Parcerias</a>
-  <a href="#" class="w3-bar-item w3-button">Atelie</a>
+  <a href="#proposta" class="w3-bar-item w3-button">Proposta</a>
+  <a href="#valor" class="w3-bar-item w3-button">Valores</a>
+  <a href="#parceires" class="w3-bar-item w3-button">Parcerias</a>
+  <a href="#loja" class="w3-bar-item w3-button">Loja</a>
 </nav>
 
 <!-- Header -->
@@ -90,17 +90,15 @@
     <div class="w3-light-gray">
       <div id="myBar" class="w3-center w3-padding w3-theme" style="width:5%">5%</div>
     </div><br>
-    <button class="w3-btn w3-theme" onclick="move()">Click Me</button> 
+    <!--button class="w3-btn w3-theme" onclick="move()"></button--> 
     </div>
     <hr>
     
-    <h2 class="w3-center">Slideshows</h2>
+    <h2 class="w3-center">Ateliê</h2>
     <div class="w3-content" style="max-width:800px;position:relative">
     
-    <img class="mySlides w3-animate-opacity" src="/w3images/snow.jpg" style="width:100%">
-    <img class="mySlides w3-animate-opacity" src="/w3images/lights.jpg" style="width:100%">
-    <img class="mySlides w3-animate-opacity" src="/w3images/mountains.jpg" style="width:100%">
-    <img class="mySlides w3-animate-opacity" src="/w3images/forest.jpg" style="width:100%">
+    <img class="mySlides w3-animate-opacity" src="./src/assets/Salao-do-artesanato-Marcelo-Camargo-Agencia-Brasil.jpg" style="width:100%">
+    <img class="mySlides w3-animate-opacity" src="./src/assets/michael-tatman_bigstock.webp" style="width:100%">
     
     <a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;left:0;" onclick="plusDivs(-1)">❮</a>
     <a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;right:0;" onclick="plusDivs(+1)">❯</a>
@@ -108,7 +106,7 @@
     
     <div class="w3-container">
     <hr>
-    <h2 class="w3-center">Navigation</h2>
+    <!-- h2 class="w3-center">Navigation</h2>
     
     <div class="w3-bar w3-theme">
       <a href="#" class="w3-bar-item w3-button w3-padding-16">Home</a>
@@ -176,49 +174,21 @@
     </div>
     </div>
     
-    <hr>
-    <h2 class="w3-center">Buttons</h2>
+    <hr-->
+    <h2 class="w3-center">conecte-se</h2>
     <div class="w3-center">
       <br>
-      <a class="w3-button w3-theme">Button</a>
-      <a class="w3-button w3-theme">Button</a>
-      <a class="w3-button w3-theme-d3 w3-disabled">Button</a>
+      <a class="w3-button w3-theme">cadastro</a>
+      <a class="w3-button w3-theme">login</a>
       <br><br>
+
+      <!-- TODO configurar links de redes sociais aqui>
       <a class="w3-button w3-circle w3-large w3-black"><i class="fa fa-plus"></i></a>
       <a class="w3-button w3-circle w3-large w3-theme"><i class="fa fa-plus"></i></a>  
-      <a class="w3-button w3-circle w3-large w3-card-4"><i class="fa fa-plus"></i></a>
+      <a class="w3-button w3-circle w3-large w3-card-4"><i class="fa fa-plus"></i></a-->
     </div>
     <br>
-    <div class="w3-center">
-      <div class="w3-dropdown-hover">
-        <button class="w3-button w3-theme">Dropdown <i class="fa fa-caret-down"></i></button>
-        <div class="w3-dropdown-content w3-bar-block w3-border">
-          <a href="#" class="w3-bar-item w3-button">Link 1</a>
-          <a href="#" class="w3-bar-item w3-button">Link 2</a>
-          <a href="#" class="w3-bar-item w3-button">Link 3</a>
-        </div>
-      </div>
-    </div>
-    
-    </div>
-    
     <hr>
-    <div class="w3-center">
-      <h2>Pagination</h2>
-      <!-- Pagination -->
-      <div class="w3-center w3-padding-32">
-        <div class="w3-bar">
-          <a href="#" class="w3-bar-item w3-button w3-hover-theme">«</a>
-          <a href="#" class="w3-bar-item w3-button w3-theme w3-hover-theme">1</a>
-          <a href="#" class="w3-bar-item w3-button w3-hover-theme">2</a>
-          <a href="#" class="w3-bar-item w3-button w3-hover-theme">3</a>
-          <a href="#" class="w3-bar-item w3-button w3-hover-theme">4</a>
-          <a href="#" class="w3-bar-item w3-button w3-hover-theme">5</a>
-          <a href="#" class="w3-bar-item w3-button w3-hover-theme">»</a>
-        </div>
-      </div>
-    </div>
-    <br>
     
     <!-- Footer -->
     <footer class="w3-container w3-theme-dark w3-padding-16">
@@ -247,19 +217,19 @@
     }
     
     // Tabs
-    function openCity(evt, cityName) {
-      var i;
-      var x = document.getElementsByClassName("city");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      var activebtn = document.getElementsByClassName("testbtn");
-      for (i = 0; i < x.length; i++) {
-        activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " w3-dark-grey";
-    }
+    // function openCity(evt, cityName) {
+    //   var i;
+    //   var x = document.getElementsByClassName("city");
+    //   for (i = 0; i < x.length; i++) {
+    //     x[i].style.display = "none";
+    //   }
+    //   var activebtn = document.getElementsByClassName("testbtn");
+    //   for (i = 0; i < x.length; i++) {
+    //     activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+    //   }
+    //   document.getElementById(cityName).style.display = "block";
+    //   evt.currentTarget.className += " w3-dark-grey";
+    // }
     
     var mybtn = document.getElementsByClassName("testbtn")[0];
     mybtn.click();
